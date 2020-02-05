@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todolist applicatie - Patienten</title>
+<style id="applicationStylesheet" type="text/css">
+
+body {
+	font-family: 'Lato', sans-serif;
+
+}
+	.mediaViewInfo {
+		--web-view-name: iPhone 6/7/8 Plus – 5;
+		--web-view-id: iPhone_6_7_8_Plus___5;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: iPhone_6_7_8_Plus___5;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#iPhone_6_7_8_Plus___5 {
+		position: absolute;
+		background: linear-gradient(180deg, rgba(70,49,80,1) 0%, rgba(62,57,53,1) 100%);
+		width: 414px;
+		height: 736px;
+		overflow: hidden;
+		--web-view-name: iPhone 6/7/8 Plus – 5;
+		--web-view-id: iPhone_6_7_8_Plus___5;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#Status_Bar {
+		position: absolute;
+		width: 363.5px;
+		height: 16px;
+		left: 26px;
+		top: 6px;
+		overflow: visible;
+	}
+	#Right_Detail {
+		position: absolute;
+		width: 26.5px;
+		height: 11.5px;
+		left: 337px;
+		top: 3px;
+		overflow: visible;
+	}
+	#battery {
+		position: absolute;
+		width: 26.5px;
+		height: 11.5px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Battery_ {
+		position: absolute;
+		width: 26.5px;
+		height: 11.5px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Battery_Outline {
+		opacity: 0.47;
+	}
+	.Battery_Outline {
+		overflow: visible;
+		position: absolute;
+		width: 24px;
+		height: 11.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Battery_Connector {
+		opacity: 0.58;
+	}
+	.Battery_Connector {
+		overflow: visible;
+		position: absolute;
+		width: 1.5px;
+		height: 4.244px;
+		left: 25px;
+		top: 3.628px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Battery_Fill {
+		position: absolute;
+		overflow: visible;
+		width: 20px;
+		height: 7.5px;
+		left: 2px;
+		top: 2px;
+	}
+	#Time {
+		position: absolute;
+		left: 159.5px;
+		top: 0px;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: SF Pro Text;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+	}
+	#Left_Detail {
+		position: absolute;
+		width: 34.006px;
+		height: 10px;
+		left: 0px;
+		top: 3.5px;
+		overflow: visible;
+	}
+	.Signal {
+		overflow: visible;
+		position: absolute;
+		width: 16.5px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Wifi {
+		overflow: visible;
+		position: absolute;
+		width: 14.012px;
+		height: 10px;
+		left: 20.994px;
+		top: 0.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	#arrow-links {
+	font-weight: bold;
+	font-size: 25px;
+	color: grey;
+	position: relative;
+		transform: translate(20px, -438px);
+		text-decoration: none;
+}
+.begeleiderterug {
+	font-weight: bold;
+	color: grey;
+	position: relative;
+		transform: translate(35px,-465px);
+}
+
+.begeleider {
+		text-align: center;
+		position: relative;
+		transform: translate(1px,130px);
+	}
+	.button {
+  border: none;
+  color: white;
+  width: 340px;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 8px 2px;
+  cursor: pointer;
+}
+
+.button5 {
+		border-radius: 30px;
+		background-color: #4CD964;
+		}
+		.button1 {
+		border-radius: 30px;
+		background-color: #5AC8FA;
+		}
+		.button2 {
+		border-radius: 30px;
+		background-color: #FF9500;
+		}
+		.button3 {
+		border-radius: 30px;
+		background-color: #5856D6;
+		}
+		.button4 {
+		border-radius: 30px;
+		background-color: #4CD964;
+		}
+
+		.Login {
+		position: relative;
+		transform: translate(35px,-550px);
+		font-size: 50px;
+		color: white;
+		font-weight: bold;
+	}
+</style>
+</head>
+<body>
+<div id="iPhone_6_7_8_Plus___5">
+	<div id="Status_Bar" class="Status_Bar">
+		<div id="Right_Detail">
+			<div id="battery">
+				<div id="Battery_">
+					<svg class="Battery_Outline" viewBox="0 0 24 11.5">
+						<path fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" shape-rendering="auto" id="Battery_Outline" d="M 0 2.5 C 0 1.119288086891174 1.119288086891174 0 2.5 0 L 21.5 0 C 22.88071250915527 0 24 1.119288086891174 24 2.5 L 24 9 C 24 10.38071155548096 22.88071250915527 11.5 21.5 11.5 L 20.14764022827148 11.5 L 0 11.5 L 2.5 11.5 C 1.119288086891174 11.5 0 10.38071155548096 0 9 L 0 2.5 Z">
+						</path>
+					</svg>
+					<svg class="Battery_Connector" viewBox="0 0 1.5 4.244">
+						<path fill="rgba(255,255,255,1)" id="Battery_Connector" d="M 0 0.000204105643206276 C 0.8737806677818298 0.3090051710605621 1.500300049781799 1.142308712005615 1.500300049781799 2.122200012207031 C 1.500300049781799 3.101381778717041 0.8737806677818298 3.935094356536865 0 4.244100570678711 L 0 0.000204105643206276 Z">
+						</path>
+					</svg>
+					<svg class="Battery_Fill">
+						<rect fill="rgba(255,255,255,1)" id="Battery_Fill" rx="1" ry="1" x="0" y="0" width="20" height="7.5">
+						</rect>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="Time">
+			<span>9:41 AM</span>
+		</div>
+		<div id="Left_Detail">
+			<svg class="Signal" viewBox="0 0 16.5 10">
+				<path fill="rgba(255,255,255,1)" id="Signal" d="M 14.24970054626465 9.999899864196777 C 13.83570003509521 9.999899864196777 13.5 9.664199829101563 13.5 9.250200271606445 L 13.5 0.7497000098228455 C 13.5 0.3357000052928925 13.83570003509521 0 14.24970054626465 0 L 15.75 0 C 16.16399955749512 0 16.49970054626465 0.3357000052928925 16.49970054626465 0.7497000098228455 L 16.49970054626465 9.250200271606445 C 16.49970054626465 9.664199829101563 16.16399955749512 9.999899864196777 15.75 9.999899864196777 L 14.24970054626465 9.999899864196777 Z M 9.749700546264648 9.999899864196777 C 9.335700035095215 9.999899864196777 9 9.664199829101563 9 9.250200271606445 L 9 2.750400066375732 C 9 2.335500001907349 9.335700035095215 1.999800086021423 9.749700546264648 1.999800086021423 L 11.25 1.999800086021423 C 11.66400051116943 1.999800086021423 11.99970054626465 2.335500001907349 11.99970054626465 2.750400066375732 L 11.99970054626465 9.250200271606445 C 11.99970054626465 9.664199829101563 11.66400051116943 9.999899864196777 11.25 9.999899864196777 L 9.749700546264648 9.999899864196777 Z M 5.24970006942749 9.999899864196777 C 4.835700035095215 9.999899864196777 4.5 9.664199829101563 4.5 9.250200271606445 L 4.5 4.750200271606445 C 4.5 4.33620023727417 4.835700035095215 3.999600172042847 5.24970006942749 3.999600172042847 L 6.75 3.999600172042847 C 7.164000034332275 3.999600172042847 7.49970006942749 4.33620023727417 7.49970006942749 4.750200271606445 L 7.49970006942749 9.250200271606445 C 7.49970006942749 9.664199829101563 7.164000034332275 9.999899864196777 6.75 9.999899864196777 L 5.24970006942749 9.999899864196777 Z M 0.7497000098228455 9.999899864196777 C 0.3357000052928925 9.999899864196777 0 9.664199829101563 0 9.250200271606445 L 0 6.249599933624268 C 0 5.83560037612915 0.3357000052928925 5.499900341033936 0.7497000098228455 5.499900341033936 L 2.25 5.499900341033936 C 2.664000034332275 5.499900341033936 2.99970006942749 5.83560037612915 2.99970006942749 6.249599933624268 L 2.99970006942749 9.250200271606445 C 2.99970006942749 9.664199829101563 2.664000034332275 9.999899864196777 2.25 9.999899864196777 L 0.7497000098228455 9.999899864196777 Z">
+				</path>
+			</svg>
+			<svg class="Wifi" viewBox="0.003 0 13.012 9">
+				<path fill="rgba(255,255,255,1)" stroke="rgba(255,255,255,1)" stroke-width="1px" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" shape-rendering="auto" id="Wifi" d="M 4.885791301727295 7.376837253570557 C 5.347670555114746 7.060296058654785 5.906570434570313 6.875100135803223 6.508800029754639 6.875100135803223 C 7.111177444458008 6.875100135803223 7.670251369476318 7.060269355773926 8.132176399230957 7.37662410736084 L 6.508800029754639 9 L 4.885791301727295 7.376837253570557 Z M 6.504300117492676 4.619699954986572 C 5.281896591186523 4.619699954986572 4.158024787902832 5.050030708312988 3.276137113571167 5.767031192779541 L 2.39440393447876 4.885214328765869 C 3.505028963088989 3.946678400039673 4.939706802368164 3.38040018081665 6.504300117492676 3.38040018081665 C 8.071253776550293 3.38040018081665 9.507980346679688 3.948622226715088 10.61910247802734 4.889698028564453 L 9.737421989440918 5.771378040313721 C 8.854942321777344 5.051826953887939 7.729118824005127 4.619699954986572 6.504300117492676 4.619699954986572 Z M 0.003346187528222799 2.493929862976074 C 1.730263352394104 0.9438411593437195 4.011251926422119 0 6.508800029754639 0 C 9.006438255310059 0 11.28797912597656 0.9441398978233337 13.01493453979492 2.493865966796875 L 12.12985038757324 3.378950119018555 C 10.63047218322754 2.054701566696167 8.661868095397949 1.250100016593933 6.508800029754639 1.250100016593933 C 4.35614538192749 1.250100016593933 2.387638568878174 2.054800510406494 0.8883816003799438 3.379049301147461 L 0.003346187528222799 2.493929862976074 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+<div class="begeleider">
+<a href="#"><button class="button button5">T. Hu | Online</button></a>
+<a href="#"><button class="button button1">V. Pisa | Online</button></a>
+<a href="#"><button class="button button2">K. Geur | Offline</button></a>
+<a href="#"><button class="button button3">P. Smal | Online</button></a>
+<a href="#"><button class="button button4">N. Tuil | Offline</button></a>
+</div>
+<div id="arrow-links">
+	<a href="login2.html"><i class="fas fa-angle-left"></i></a>
+	</div>
+	<h3 class="begeleiderterug">Begeleider</h3>
+	<h2 class="Login">Log in</h2>
+</body>
+</html>
